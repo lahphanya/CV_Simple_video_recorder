@@ -98,6 +98,9 @@ while True:
 
     elif key == 27:
         break
+
+    if recording and out is not None:
+        out.write(frame)
     
 capture.release()
 
